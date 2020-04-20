@@ -1,7 +1,12 @@
 ﻿# Circle-Empires-Editor
 BepInEx Mod of Circle Empires.
 ## Detailed Description(haven't completed for now)
+## Next Plan
+Add Setting UI that can enable and disable function.
 ## Change Log:
+* v0.4.2
+Delete surplus code and improve logic of program.
+
 * v0.4.1
 Change some name of cheates.
 
@@ -37,7 +42,12 @@ Can upgrade level of unit that is selected to max.
 # Circle Empires 修改器
 一个 Circle Empires 的 BIE Mod。
 ## 详细说明：暂时未完成
+## 下一个计划
+添加功能设置界面。
 ## 更新日志：
+* v0.4.2
+删除了多余的代码，改进了些许逻辑。
+
 * v0.4.1
 修改了一些名字。
 
