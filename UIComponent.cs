@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 namespace Circle_Empires_Editor
@@ -29,7 +30,6 @@ namespace Circle_Empires_Editor
             private Image mImage;
             private HotkeyButtonCaller mHotkeyButtonCaller;
 
-            private GameObject mTextGameObject;
             private Text mText;
             private UnityEngine.EventSystems.EventTrigger mEventTrigger;
 
@@ -47,14 +47,6 @@ namespace Circle_Empires_Editor
                 {
                     if (Hotkey.IsDown())
                         Button.onClick.Invoke();
-                }
-            }
-
-            public string text
-            {
-                get
-                {
-                    return "";
                 }
             }
 
@@ -95,8 +87,12 @@ namespace Circle_Empires_Editor
                 mImage = gameObject.AddComponent<Image>();
                 mEventTrigger = gameObject.AddComponent<UnityEngine.EventSystems.EventTrigger>();
 
-                mTextGameObject = new GameObject("Text");
-                mText = mTextGameObject.AddComponent<Text>();
+                mText = new GameObject("Text").AddComponent<Text>();
+                mText.RectTransform.SetParent(gameObject.transform);
+                mText.RectTransform.anchorMin = new Vector2(0, 0);
+                mText.RectTransform.anchorMax = new Vector2(1, 1);
+
+                mText.alignment = TextAnchor.MiddleCenter;
             }
 
             public void SetImage(Image image)

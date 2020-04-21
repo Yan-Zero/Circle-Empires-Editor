@@ -238,7 +238,16 @@ namespace Circle_Empires_Editor
             CloseButton.RectTransform.anchorMin = new Vector2(0.03f, 0.03f);
             CloseButton.RectTransform.anchoredPosition = new Vector2(0, 0);
             CloseButton.RectTransform.pivot = new Vector2(0, 0);
+
             CloseButton.SetImage(RuntimeConfig.SpriteConfig.Button_Brown);
+            CloseButton.Text.text = "关闭";
+            CloseButton.Text.font = RuntimeConfig.FontConfig.Signika_Bold;
+            CloseButton.Text.fontSize = 30;
+
+            CloseButton.onClick.AddListener(delegate 
+            {
+                gameObject.SetActive(false);
+            });
         }
     }
 
