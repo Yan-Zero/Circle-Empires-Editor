@@ -1,4 +1,8 @@
-﻿# Circle-Empires-Editor
+# 赞助码 Sponsorship
+## 微信
+![avatar](https://www.hualigs.cn/image/600aa12470350.jpg) 
+
+# Circle-Empires-Editor
 BepInEx Mod of Circle Empires.
 ## Detailed Description(haven't completed for now)
 ## Next Plan
